@@ -4,12 +4,17 @@ const PostSchema = new mongoose.Schema({
   title: {
     type: String,
     trim: true,
-    required: [true, 'Please add a title']
+    required: [true, 'Dodaj tytuł dla twojego posta']
   },
   text: {
     type: String,
     trim: true,
-    required: [true, 'Please add some text']
+    required: [true, 'Dodaj treść twojego posta']
+  },
+  author: {
+    type: String,
+    trim: true,
+    required: [true, 'Podaj proszę kto napisał tego posta']
   },
   createdAt: {
     type: Date,
